@@ -52,3 +52,53 @@ print(" * 列表 删除 操作 * ")
 ages.remove(2)
 print(ages)
 
+# 反转顺序
+ages.reverse()
+print(ages)
+
+# 删除索引位置的元素并返回
+print("ages.pop(4) = ", ages.pop(4))
+print(ages)
+print("ages.pop() = ", ages.pop())
+print(ages)
+
+# 复制
+age2 = ages.copy()
+print(age2)
+
+# 清空
+age2.clear()
+print(age2)
+
+print("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n")
+print(" * 列表 长度 操作 * ")
+print("len(ages) = ", len(ages))
+print("len(ages[3]) = ", len(ages[3]))
+# TypeError: object of type 'int' has no len()
+# print("len(ages[0])", len(ages[0]))
+print("ages.count(3) = ", ages.count(3))
+
+print("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n")
+print(" * 列表 排序 操作 * ")
+temp = [1,3,5,6,2,8,6,9,2]
+# 反向排序
+temp.sort(reverse=True)
+print(temp)
+# 正向排序，reverse=False 或者 无参
+temp.sort()
+print(temp)
+
+list1 = [1,3,5,6,2,8,6,9,2]
+print("list1 操作前",list1)
+list2 = sorted(list1)
+print("list1 操作后",list1)
+print("list2 操作后",list2)
+
+print("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n")
+print(" * 列表 排序 操作 * ")
+jobList = ['a',1,'b',2,'c','c',3]
+print(jobList)
+x = jobList.count('c')
+for i in range(x):
+    jobList.remove('c')
+print(jobList)
