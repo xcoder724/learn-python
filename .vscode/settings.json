@@ -2,7 +2,7 @@
     "debug.console.fontSize": 16,
     "terminal.integrated.fontSize": 16,
     "[python]": {
-        "editor.defaultFormatter": "ms-python.autopep8"
+        "editor.defaultFormatter": "ms-python.python"
     },
     "python.formatting.provider": "none",
     "editor.fontSize": 16,
